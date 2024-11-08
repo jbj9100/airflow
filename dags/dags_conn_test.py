@@ -1,7 +1,7 @@
 from airflow.models.dag import DAG
 import datetime
 import pendulum
-from airflow.operators.bash import EmptyOperator # 아무것도 하지 않는 오퍼레이터
+from airflow.operators.empty import EmptyOperator # 아무것도 하지 않는 오퍼레이터
 
 with DAG(
     dag_id="dags_conn_test",                    
