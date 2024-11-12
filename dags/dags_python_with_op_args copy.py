@@ -12,7 +12,7 @@ with DAG(
     catchup=False
 ) as dag:
 
-    @task(task_id=regist_t1)
+    @task(task_id="regist_t1")
     def task_regist():
         return regist('hjkim','man','kr','seoul')
     regist_t1 = task_regist()
