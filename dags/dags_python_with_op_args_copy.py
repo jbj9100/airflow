@@ -6,7 +6,7 @@ from airflow.decorators import task
 from common.common_func import regist
 
 with DAG(
-    dag_id="dags_python_with_op_args",
+    dag_id="dags_python_with_op_args_copy",
     schedule="30 6 * * *",
     start_date=pendulum.datetime(2024, 1, 1, tz="Asia/Seoul"),
     catchup=False
