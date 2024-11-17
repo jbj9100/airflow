@@ -25,4 +25,4 @@ with DAG(
     t2 = task2()
     t3 = task3()
 
-    t1 >> [t2, t3]
+    t1 >> [t2, t3] 
