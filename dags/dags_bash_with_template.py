@@ -15,7 +15,7 @@ with DAG(
     )
 
     bash_t2 = BashOperator(
-        task_id='bast_t2',
+        task_id='bash_t2',
         env={
             'START_DATE':'{{data_interval_start | ds}}',
             'START_DATE_NO_ds':'{{data_interval_start }}',
